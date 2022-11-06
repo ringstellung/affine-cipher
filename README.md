@@ -52,24 +52,24 @@ El proyecto todo está codificado según `Python 3`.
 * Cifrar el texto plano del fichero `plainText.txt` mediante la clave
   de decimación 21 y desplazamiento 13:
 
-		python affine_cryp.py encipheringText.txt 21 13 0 (ciphering)
+		python affine_cryptosystem.py plainText.txt 21 13 0
 
 * Descifrar el texto cifrado del fichero `encipheringText.txt` a
   partir de la clave derivada de la de decimación 21 y desplazamiento
   13:
 	
-		python affine_cryp.py encipheringText.txt 21 13 1
+		python affine_cryptosystem.py encipheringText.txt 21 13 1
 
 * Ataque para encontrar la clave de cifrado mediante la prueba
   Chi-cuadrado cuando `len(sys.argv) != 5`:
 
-		python affine_cryp.py encipheringText.txt 21 13 
+		python affine_cryptosystem.py encipheringText.txt 21 13 
 
-		python affine_cryp.py encipheringText.txt 21
+		python affine_cryptosystem.py encipheringText.txt 21
 
   y la  mejor opción es: 
 
-		python affine_cryp.py encipheringText.txt
+		python affine_cryptosystem.py encipheringText.txt
 
 
 ## Referencias

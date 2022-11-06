@@ -6,16 +6,16 @@ from affine_classes import *
 """
   Example of use:
 
-  python3 affine_cryp.py encipheringText.txt 21 13 1 (deciphering)
+  python3 affine_cryptosystem.py encipheringText.txt 21 13 0 (in order to enciphering)
 
-  python3 affine_cryp.py encipheringText.txt 21 13 0 (ciphering)
+  python3 affine_cryptosystem.py plainText.txt 21 13 1 (in order to deciphering)
 
   anyone of the following attacks with ChiSquare method, since
   len(sys.argv) != 5 occurs:
 
-  python3 affine_cryp.py encipheringText.txt 21 13 
-  python3 affine_cryp.py encipheringText.txt 21
-  python3 affine_cryp.py encipheringText.txt (the best)
+  python3 affine_cryptosystem.py encipheringText.txt 21 13 
+  python3 affine_cryptosystem.py encipheringText.txt 21
+  python3 affine_cryptosystem.py encipheringText.txt (the best)
 
   if (sys.argv[2],26) != 1, the deciphering gives a string of A since
   _invMod() is specilly designed for this.
